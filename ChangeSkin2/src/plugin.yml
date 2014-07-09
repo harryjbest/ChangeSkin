@@ -1,0 +1,42 @@
+name: ChangeSkin
+main: me.clip.changeskin.ChangeSkin
+version: 1.2
+author: extended_clip
+depend: [ProtocolLib]
+description: Change displayname/skin by command also force every player to wear a certain skin on join!
+permissions:
+    skin.self:
+        description: access to change your own skin/reset skin/skin list
+        default: op
+    skin.name:
+        description: access to change your skin and name
+        default: op
+    skin.others:
+        description: Access to change others skin
+        default: op
+    skin.others.name:
+        description: Access to change others skin and name
+        default: op
+    skin.others.reset:
+        description: Access to reset others skin and name
+        default: op
+    skin.reload:
+        description: Access to /skin reload command
+        default: op
+    skin.users:
+        description: Access to list players who have skins/names changed
+        default: op
+    skin.bypass.skins:
+        description: Ability to bypass the skin blacklist/whitelist
+        default: op
+    skin.bypass.displaynames:
+        description: Ability to bypass the display name blacklist/whitelist
+        default: op
+    skin.updates:
+        description: Announce if ChangeSkin has an update when you join the server
+        default: op
+commands:
+   skin:
+     description: Change your skin/displayname
+     aliases: [changeskin, cskin]
+     
